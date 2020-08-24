@@ -1,2 +1,2 @@
-# Parentetization
-Aplicação para detectar se a parentetização está correta.
+# webFila
+Aplicativo web para controle se senhas e filas.
