@@ -6,13 +6,9 @@ export default function Home(){
     const [pilha,setPilha]=useState([])
     const [expression,setExpression]=useState([])
     const [result,setResult]=useState('')
-
-
     function handleCheck(e){
         e.preventDefault()
         var value=''
-        //console.log(expression)
-
         for(let i=0;i<expression.length;i++){
             value=expression[i]
             if(value==='('){
@@ -30,22 +26,15 @@ export default function Home(){
             }else{
                 setResult('Incorreta')
             }
-        }
-
-
-
-        console.log(pilha)
-        console.log(pilha.length)
-           
-    
+        } 
         setPilha([])
     }
     
     return(
         <div className="geral">
             <h1>Parentetização</h1>
-            <h3>Digite a expressão!</h3>
             <form onSubmit={handleCheck}>
+                <h3>Digite a expressão!</h3>
                 <input
                     placeholder="Expressão"
                     value={expression}
