@@ -1,2 +1,2 @@
-# webFila
-Aplicativo web para controle se senhas e filas.
+# Parentetização
+Aplicativo que define se os parenteses estão corretos no expressão matemática.
